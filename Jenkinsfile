@@ -26,7 +26,6 @@ pipeline {
                 cat deployment.yaml
                 """
             }
-        }
 
         stage("Push Deployment file into git") {
             steps {
@@ -37,6 +36,7 @@ pipeline {
                 git commit -m "Updated Deployment Manifest"
                 git push
                 """
+                }
             }
         }
     }
