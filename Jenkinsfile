@@ -35,7 +35,7 @@ pipeline {
                 git config --global user.email "manav.singh.ms@gmail.com"
                 git add deployment.yaml
                 git commit -m "Updated Deployment Manifest"
-                git push
+                git push --set-upstream origin main
                 """
             }
         }
