@@ -26,6 +26,7 @@ pipeline {
                 cat deployment.yaml
                 """
             }
+        }    
 
         stage("Push Deployment file into git") {
             steps {
