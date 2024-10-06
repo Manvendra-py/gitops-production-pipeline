@@ -35,10 +35,8 @@ pipeline {
                 git config --global user.email "manav.singh.ms@gmail.com"
                 git add deployment.yaml
                 git commit -m "Updated Deployment Manifest"
+                git push
                 """
-                withCredentials([gitUsernamePassword(credentialsId:'github', gitToolName= 'default')]) {
-                    sh "git push https://github.com/Manvendra-py/gitops-production-pipeline.git main"
-                }
             }
         }
     }
