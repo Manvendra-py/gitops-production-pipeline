@@ -36,7 +36,6 @@ pipeline {
                 git commit -m "Updated Deployment Manifest"
                 git push
                 """
-                }
             }
         }
     }
